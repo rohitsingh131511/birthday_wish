@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename);
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "https://github.com/rohitsingh131511/birthday_wish.git", // 👈 Change this to your GitHub repository name
+  base: "birthday_wish/", // 👈 Change this to your GitHub repository name
 
   plugins: [react(), tailwindcss(), viteSingleFile()],
 

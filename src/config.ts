@@ -2,7 +2,7 @@ export type Memory = { src: string; caption: string };
 
 const params = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : new URLSearchParams();
 
-export const defaultName = params.get("name")?.slice(0, 24) || "Ayesha";
+export const defaultName = params.get("name")?.slice(0, 24) || "Son Di";
 export const defaultSender = params.get("from")?.slice(0, 24) || "Someone who adores you";
 
 export const wishes = [
@@ -22,27 +22,27 @@ export const letterLines = [
 
 export const memories: Memory[] = [
   {
-    src: "https://images.pexels.com/photos/5805040/pexels-photo-5805040.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+    src: "/src/images/1.jpg",
     caption: "Confetti & cupcakes",
   },
   {
-    src: "https://images.pexels.com/photos/27176125/pexels-photo-27176125.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+    src: "/src/images/2.jpg",
     caption: "Party hats, always",
   },
   {
-    src: "https://images.pexels.com/photos/7180890/pexels-photo-7180890.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+    src: "/src/images/3.jpg",
     caption: "The whole crowd",
   },
   {
-    src: "https://images.pexels.com/photos/37951113/pexels-photo-37951113.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+    src: "/src/images/4.jpg",
     caption: "Balloons & sunshine",
   },
   {
-    src: "https://images.pexels.com/photos/35399090/pexels-photo-35399090.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+    src: "/src/images/5.jpg",
     caption: "Dancing till late",
   },
   {
-    src: "https://images.pexels.com/photos/5805034/pexels-photo-5805034.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+    src: "/src/images/6.jpg",
     caption: "Timeless moments",
   },
 ];
