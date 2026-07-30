@@ -1,15 +1,9 @@
 export type Memory = { src: string; caption: string };
-import img1 from './images/1.jpg';
-import img2 from './images/2.jpg';
-import img3 from './images/3.jpg';
-import img4 from './images/4.jpg';
-import img5 from './images/5.jpg';
-import img6 from './images/6.jpg';
 
 const params = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : new URLSearchParams();
 
 export const defaultName = params.get("name")?.slice(0, 24) || "Son Di";
-export const defaultSender = params.get("from")?.slice(0, 24) || "Someone who adores you";
+export const defaultSender = params.get("from")?.slice(0, 24) || "Neelam";
 
 export const wishes = [
   { icon: "🌸", text: "May every sunrise this year feel as warm as your smile." },
@@ -28,27 +22,27 @@ export const letterLines = [
 
 export const memories: Memory[] = [
   {
-    src: img1,
-    caption: "Confetti & cupcakes",
+    src: "/src/images/1.jpg",
+    caption: "My baby",
   },
   {
-    src: img2,
-    caption: "Party hats, always",
+    src: "/src/images/2.jpg",
+    caption: "Home Party Time",
   },
   {
-    src: img3,
-    caption: "The whole crowd",
+    src: "/src/images/3.jpg",
+    caption: "Mother Love",
   },
   {
-    src: img4,
-    caption: "Balloons & sunshine",
+    src: "/src/images/4.jpg",
+    caption: "Family Love",
   },
   {
-    src: img5,
-    caption: "Dancing till late",
+    src: "/src/images/5.jpg",
+    caption: "Family Time",
   },
   {
-    src: img6,
-    caption: "Timeless moments",
+    src: "/src/images/6.jpg",
+    caption: "Sister Love",
   },
 ];
