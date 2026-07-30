@@ -9,7 +9,7 @@ import img6 from "./images/6.jpg";
 const params = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : new URLSearchParams();
 
 export const defaultName = params.get("name")?.slice(0, 24) || "Son Di";
-export const defaultSender = params.get("from")?.slice(0, 24) || "Neelam";
+export const defaultSender = params.get("from")?.slice(0, 24) || "Whole Family";
 
 export const wishes = [
   { icon: "🌸", text: "May every sunrise this year feel as warm as your smile." },
