@@ -1,4 +1,10 @@
 export type Memory = { src: string; caption: string };
+import img1 from "./images/1.jpg";
+import img2 from "./images/2.jpg";
+import img3 from "./images/3.jpg";
+import img4 from "./images/4.jpg";
+import img5 from "./images/5.jpg";
+import img6 from "./images/6.jpg";
 
 const params = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : new URLSearchParams();
 
@@ -22,27 +28,27 @@ export const letterLines = [
 
 export const memories: Memory[] = [
   {
-    src: "/src/images/1.jpg",
+    src: img1,
     caption: "My baby",
   },
   {
-    src: "/src/images/2.jpg",
+    src: img2,
     caption: "Home Party Time",
   },
   {
-    src: "/src/images/3.jpg",
+    src: img3,
     caption: "Mother Love",
   },
   {
-    src: "/src/images/4.jpg",
+    src: img4,
     caption: "Family Love",
   },
   {
-    src: "/src/images/5.jpg",
+    src: img5,
     caption: "Family Time",
   },
   {
-    src: "/src/images/6.jpg",
+    src: img6,
     caption: "Sister Love",
   },
 ];
